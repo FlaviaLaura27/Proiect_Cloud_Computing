@@ -34,7 +34,7 @@ const MainPage = () => {
   };
 
   const handleUpdateRecord = (id) => {
-    router.push(`/records/edit?id=${id}`);
+    router.push(`/edit?id=${id}`);
   };
 
   useEffect(() => {
