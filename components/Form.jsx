@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 const Form = (props) => {
-  const { entry, onSubmit } = props;
   const router = useRouter();
+  const { entry, onSubmit } = props;
   const [data, setData] = useState(entry);
 
   const updateEntry = (type, value) => {
@@ -27,7 +27,7 @@ const Form = (props) => {
           <input
             type="text"
             id="FirstName"
-           // value={data.FirstName}
+            //value={data.FirstName}
             onChange={(e) => updateEntry("FirstName", e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="First Name"
@@ -44,7 +44,7 @@ const Form = (props) => {
           <input
             type="text"
             id="LastName"
-           // value={entry.LastName}
+           // value={data.LastName}
             onChange={(e) => updateEntry("LastName", e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Last Name"
@@ -61,7 +61,7 @@ const Form = (props) => {
           <input
             type="number"
             id="Age"
-           // value={entry.Age}
+           // value={data.Age}
             onChange={(e) => updateEntry("Age", e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Age"
@@ -78,7 +78,7 @@ const Form = (props) => {
           <input
             type="text"
             id="Interests"
-           // value={entry.Interests}
+           // value={data.Interests}
             onChange={(e) => updateEntry("Interests", e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Interests"
@@ -95,7 +95,7 @@ const Form = (props) => {
           <input
             type="text"
             id="Demographics"
-           // value={entry.Demographics}
+           // value={data.Demographics}
             onChange={(e) => updateEntry("Demographics", e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Demographics"
@@ -112,7 +112,7 @@ const Form = (props) => {
           <input
             type="text"
             id="Profession"
-           // value={entry.Profession}
+           // value={data.Profession}
             onChange={(e) => updateEntry("Profession", e.target.value)}
             className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Profession"
@@ -129,7 +129,7 @@ const Form = (props) => {
           <input
             type="text"
             id="Income"
-           // value={entry.Income}
+           // value={data.Income}
             onChange={(e) => updateEntry("Income", e.target.value)}
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Income"
@@ -148,8 +148,7 @@ const Form = (props) => {
             type="button"
             onClick={() => onSubmit(data)}
             className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
-          > Create
-           {/* {entry._id ? "Update" : "Create"} */}
+          > Submit
           </button>
         </div>
       </div>

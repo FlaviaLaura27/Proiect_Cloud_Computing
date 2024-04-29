@@ -34,7 +34,26 @@ export const getRecordById = async (id) => {
     }
 }
 
-export const createRecord = async (record) => { //(data)
+export const getRecord = async (id) => {
+    try {
+        const response = await fetch(`/api/records?id=${id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(entry),
+        });
+    
+        const data = await response.json();
+    
+        return data.data;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+export const createRecord = async (record) => { 
     try {
         delete record._id;
 
