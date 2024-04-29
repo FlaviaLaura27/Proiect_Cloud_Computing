@@ -34,7 +34,7 @@ export const getRecordById = async (id) => {
     }
 }
 
-export const createRecord = async (record) => {
+export const createRecord = async (record) => { //(data)
     try {
         delete record._id;
 

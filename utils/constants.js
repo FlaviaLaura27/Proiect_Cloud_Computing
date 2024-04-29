@@ -1,8 +1,7 @@
 export const defaultValues = {
-    _id: '',
     FirstName: '',
     LastName: '',
-    Age: '',
+    Age: 0,
     Interests: '',
     Demographics: '',
     Profession: '',

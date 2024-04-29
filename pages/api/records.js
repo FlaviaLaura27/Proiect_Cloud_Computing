@@ -32,7 +32,6 @@ const deleteRecord = async (id) => {
 }
 
 export default async function handler(req, res) {
-
 	const isAllowedMethod = req.method === 'GET' || req.method === 'POST'
 	 || req.method === 'PUT' || req.method === 'DELETE';
 	if(!isAllowedMethod) {
