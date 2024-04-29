@@ -37,6 +37,10 @@ const MainPage = () => {
     router.push(`/edit?id=${id}`);
   };
 
+  const handleCreateRecord = () => {
+    router.push(`/create`);
+  }
+
   useEffect(() => {
     fetchRecords();
   }, []);
@@ -45,58 +49,69 @@ const MainPage = () => {
     return <Spinner/>
   }
 
-  return (
-    <div className="p-4 flex flex-wrap gap-4">
-      {records.map((record) => (
-        <div
-        className="max-w-sm p-6 bg-pink-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-        key={record._id}
+  return<div className="p-4 flex flex-wrap gap-4">
+  {}
+  <div className="flex justify-center w-full mt-4">
+    <button
+      type="button"
+      className="text-black bg-gradient-to-r from-pink-400 via-blue-500 to-pink-600 
+      hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 
+      dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-8 py-3 text-center"
+      onClick={handleCreateRecord} 
+      >
+      Create
+    </button>
+  </div>
+  {}
+  {records.map((record) => (
+    <div
+      className="max-w-sm p-6 bg-pink-200 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+      key={record._id}
     >    
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {record.FirstName + " " + record.LastName}
-          </h5>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {record.Age}
-          </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {record.Interest}
-          </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {record.Profession}
-          </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {record.Income + " $"}
-          </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {record.Location}
-          </p>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {record.Demographics}
-          </p>
-          <div className="flex justify-center">
-            <button
-              type="button"
-              className="text-black bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
-              hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 
-              dark:focus:ring-yellow-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              onClick={() => handleUpdateRecord(record._id)}
-            >
-              Update
-            </button>
-            <button
-              type="button"
-              className="text-black bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 
-              hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300
-               dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-              onClick={() => handleDeleteRecord(record._id)}
-            >
-              Delete
-            </button>
-          </div>
-        </div>
-      ))}
+      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        {record.FirstName + " " + record.LastName}
+      </h5>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {record.Age}
+      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {record.Interest}
+      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {record.Profession}
+      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {record.Income + " $"}
+      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {record.Location}
+      </p>
+      <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        {record.Demographics}
+      </p>
+      <div className="flex justify-center">
+        <button
+          type="button"
+          className="text-black bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
+          hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 
+          dark:focus:ring-yellow-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          onClick={() => handleUpdateRecord(record._id)}
+        >
+          Update
+        </button>
+        <button
+          type="button"
+          className="text-black bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 
+          hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300
+          dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          onClick={() => handleDeleteRecord(record._id)}
+        >
+          Delete
+        </button>
+      </div>
     </div>
-  );
+  ))}
+</div>
 };
 
 export default MainPage;
