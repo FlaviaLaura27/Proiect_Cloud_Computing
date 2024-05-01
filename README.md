@@ -38,13 +38,17 @@ PUT - pentru a actualiza datele existente.
 DELETE - pentru a șterge datele.
 
 5. Capturi ecran aplicație:
-  
+  Interfața aplicației cu toate datele introduse în baza de date:
+![image](https://github.com/FlaviaLaura27/Proiect_Cloud_Computing/assets/102656992/1c176707-d6d7-4c06-9217-fcc216ae4cd5)
+
+  Formularul de crearea a unei noi instanțe în baza de date:  
+  ![image](https://github.com/FlaviaLaura27/Proiect_Cloud_Computing/assets/102656992/f79c9e7d-fdf0-4255-9979-b364f81a8924)
 
 6. Referințe:
-Advantages Of Cloud Computing  |  Google Cloud
-Top 10 Benefits of Cloud Computing (oracle.com)
-What is a REST API? | IBM
-HTTP Messages - HTTP | MDN (mozilla.org)
-Behind the scenes of Vercel's infrastructure: Achieving optimal scalability and performance – Vercel
-Why Use MongoDB And When To Use It? | MongoDB
+[ Advantages Of Cloud Computing  |  Google Cloud](https://cloud.google.com/learn/advantages-of-cloud-computing)
+[Top 10 Benefits of Cloud Computing (oracle.com)](https://www.oracle.com/cloud/what-is-cloud-computing/top-10-benefits-cloud-computing/)
+[What is a REST API? | IBM](https://www.ibm.com/topics/rest-apis)
+[HTTP Messages - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
+[Behind the scenes of Vercel's infrastructure: Achieving optimal scalability and performance – Vercel](https://vercel.com/blog/behind-the-scenes-of-vercels-infrastructure)
+[ Why Use MongoDB And When To Use It? | MongoDB](https://www.mongodb.com/resources/products/fundamentals/why-use-mongodb)
 
