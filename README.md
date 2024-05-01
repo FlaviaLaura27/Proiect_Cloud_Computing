@@ -5,7 +5,7 @@ Aplicația dezvoltată are ca scop principal gestionarea eficientă a unei baze 
 Problema centrală pe care o abordează aplicația este necesitatea de a avea acces rapid și sigur la informații complexe și variate despre un număr mare de persoane, aproape 400, fără compromisuri în ceea ce privește securitatea și performanța. În contextul creșterii continue a volumului de date și a diversității informațiilor, este esențial să se asigure o organizare eficientă care să permită utilizatorilor să acceseze, să actualizeze și să analizeze datele într-un mod cât mai simplu și intuitiv posibil.
 
 3. Descriere API:
-API-ul aplicatiei este structurat pentru a oferi acces la operațiunile CRUD (Create, Read, Update, Delete) asupra datelor stocate în baza de date MongoDB. Aplicația folosește framework-ul Next.js și serverul implicit acestuia pentru a gestiona rutele și datele.
+API-ul aplicatiei(https://proiect-cloud-computing-chi.vercel.app/api/records) este structurat pentru a oferi acces la operațiunile CRUD (Create, Read, Update, Delete) asupra datelor stocate în baza de date MongoDB. Aplicația folosește framework-ul Next.js și serverul implicit acestuia pentru a gestiona rutele și datele.
 Endpoint-uri:
 GET /records - returnează o listă cu toate persoanele din baza de date.
 POST /records - adaugă o nouă persoană în baza de date.
