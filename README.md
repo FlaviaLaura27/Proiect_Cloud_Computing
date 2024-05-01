@@ -37,6 +37,10 @@ POST - pentru a adăuga date noi.
 PUT - pentru a actualiza datele existente.
 DELETE - pentru a șterge datele.
 
+Înregistrarea flow-ului aplicației este disponibilă accesând link-ul următor:
+
+https://youtu.be/N7AKYYue8VA
+
 5. Capturi ecran aplicație:
   Interfața aplicației cu toate datele introduse în baza de date:
 ![image](https://github.com/FlaviaLaura27/Proiect_Cloud_Computing/assets/102656992/1c176707-d6d7-4c06-9217-fcc216ae4cd5)
