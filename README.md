@@ -46,9 +46,14 @@ DELETE - pentru a șterge datele.
 
 6. Referințe:
 [ Advantages Of Cloud Computing  |  Google Cloud](https://cloud.google.com/learn/advantages-of-cloud-computing)
+
 [Top 10 Benefits of Cloud Computing (oracle.com)](https://www.oracle.com/cloud/what-is-cloud-computing/top-10-benefits-cloud-computing/)
+
 [What is a REST API? | IBM](https://www.ibm.com/topics/rest-apis)
+
 [HTTP Messages - HTTP | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
+
 [Behind the scenes of Vercel's infrastructure: Achieving optimal scalability and performance – Vercel](https://vercel.com/blog/behind-the-scenes-of-vercels-infrastructure)
+
 [ Why Use MongoDB And When To Use It? | MongoDB](https://www.mongodb.com/resources/products/fundamentals/why-use-mongodb)
 
