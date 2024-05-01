@@ -45,6 +45,7 @@ DELETE - pentru a șterge datele.
   ![image](https://github.com/FlaviaLaura27/Proiect_Cloud_Computing/assets/102656992/f79c9e7d-fdf0-4255-9979-b364f81a8924)
 
 6. Referințe:
+
 [ Advantages Of Cloud Computing  |  Google Cloud](https://cloud.google.com/learn/advantages-of-cloud-computing)
 
 [Top 10 Benefits of Cloud Computing (oracle.com)](https://www.oracle.com/cloud/what-is-cloud-computing/top-10-benefits-cloud-computing/)
